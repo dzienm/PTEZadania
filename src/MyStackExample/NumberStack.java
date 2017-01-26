@@ -1,9 +1,17 @@
 package MyStackExample;
 
+import java.util.ArrayList;
+
 public class NumberStack {
 
-	private int count = 0;
-	private int[] values = new int[2];
+	private int capacity;		//the stack maximum capacity
+	private int count = 0;		//the number of elements put on the stack
+	private int[] values;
+
+	public NumberStack(int n){
+		capacity = n;
+		values = new int[n];
+	}
 
 	public int getCount() {
 
@@ -12,6 +20,9 @@ public class NumberStack {
 
 	public void push(int i) {
 
+		if(count==capacity){
+			throw new IllegalStateException();
+		}
 		values[count++] = i;
 	}
 
@@ -40,9 +51,7 @@ public class NumberStack {
 	}
 
 
-	public static void main(String [] args){
-		NumberStack stackEx = new NumberStack();
-		stackEx.push(1);
-		stackEx.getCount();
+	public int getCapacity() {
+		return this.capacity;
 	}
 }
