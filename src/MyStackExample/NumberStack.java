@@ -1,6 +1,5 @@
 package MyStackExample;
 
-import java.util.ArrayList;
 
 public class NumberStack {
 

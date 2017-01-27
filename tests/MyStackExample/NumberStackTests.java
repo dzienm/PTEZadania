@@ -162,8 +162,8 @@ public class NumberStackTests {
 		}
 	}
 
-	//TODO stos ma byc n elementowy
-	//TODO gorna granica do dopisania  zeby push sie nie dalo zrobic
+	//stos ma byc n elementowy - zrobione
+	//gorna granica do dopisania  zeby push sie nie dalo zrobic - zro
 	
 	//ZADANIE A, mozna enuma wziac albo jakis rejestr (money wartosc trzymana na incie, na floacie mozna miec problemy z sumowaniem prawo lewo bo jest plynacy przecinek)
 	//Lepiej przyjac ze ostatnie dwie liczby w int to sa grosze albo cos w tym stylu
